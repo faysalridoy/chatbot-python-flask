@@ -91,4 +91,4 @@ def get_bot_response():
     userText = request.args.get('msg')
     return str(Bot.get_response(userText))
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=False,host='0.0.0.0')
